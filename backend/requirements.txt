@@ -9,3 +9,5 @@ argon2-cffi>=23.1.0
 pandas>=2.0
 xlsxwriter>=3.2
 email-validator>=2.1.0
+python-multipart>=0.0.27
+alembic>=1.18.4
