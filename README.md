@@ -111,13 +111,7 @@ python -m venv venv
 #### Windows
 
 ```bash
-env\Scripts\activate
-```
-
-#### Linux / macOS
-
-```bash
-source venv/bin/activate
+venv\Scripts\activate  
 ```
 
 ### 4️⃣ Instalar dependencias
@@ -138,7 +132,15 @@ DATABASE_URL=postgresql+psycopg://postgres:contraseña@localhost:5432/tumomito_d
 AUTO_CREATE_DB=true
 ```
 
-### 6 Crear las credenciales de admin al iniciar el servidor
+### 6 Ejecutar el servidor
+
+```bash
+uvicorn app.main:app --reload
+```
+Luego detener el Servidor con Ctrl + c
+Las tablas de la base de datos tumomito_db fueron creadas automaticamente
+
+### 7 Crear la credencial de admin después de detener el servidor para el Login
 
 ```bash
 python -m scripts.create_admin
@@ -147,7 +149,7 @@ Esto creará el usuario admin con:
 - Usuario: admin
 - Contraseña: Admin123*
 
-### 7 Ejecutar el servidor
+### 8 Ejecutar el servidor nuevamente
 
 ```bash
 uvicorn app.main:app --reload
