@@ -121,6 +121,7 @@ pip install -r requirements.txt
 ```
 ### 5️⃣ Configurar la base de datos y variables de entorno
 Primero crear la base de datos PostgreSQL con el nombre de 'tumomito_db' en pgAdmin, luego las tablas se crearán automaticamente al ejecutar el servidor
+
 Crea un archivo `.env` dentro de la carpeta `backend` (o en la raíz del proyecto, según cómo lo utilice tu código) con el siguiente contenido ajustando tus datos de acceso si es necesario:
 
 Copiar todo el contenido en el archivo .env:
